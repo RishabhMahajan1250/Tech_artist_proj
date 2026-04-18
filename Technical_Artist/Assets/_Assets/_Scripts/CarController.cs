@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Rendering;
 
 public class CarController : MonoBehaviour
 {
@@ -9,6 +10,8 @@ public class CarController : MonoBehaviour
 	[SerializeField] private float horizontalStepCount = 5f;
 	[SerializeField] private float swipeThreshold = 50f;
 
+	[SerializeField] Transform turnEffect ;
+
 	private bool isMoving = false;
 	private int currentStep = 0;
 	private Vector3 targetPosition;
@@ -16,7 +19,14 @@ public class CarController : MonoBehaviour
 	private bool isSwipingMouse = false;
 	private Vector2 swipeStartPosTouch;
 	private bool isSwipingTouch = false;
-	private void Update()
+	private ParticleSystem ps;
+
+    private void Awake()
+    {
+        ps = turnEffect.GetComponent<ParticleSystem>();
+    }
+
+    private void Update()
 	{
 		/* if (Keyboard.current != null)
 		{
@@ -65,10 +75,12 @@ public class CarController : MonoBehaviour
 			if (Mathf.Abs(delta.x) > swipeThreshold && Mathf.Abs(delta.x) > Mathf.Abs(delta.y))
 			{
 				if (delta.x < 0f){
-					MoveHorizontal(1);
+                    
+                    MoveHorizontal(1);
 				}
 				else{
-					MoveHorizontal(-1);
+                 
+                    MoveHorizontal(-1);
 				}
 			}
 		}
@@ -103,10 +115,11 @@ public class CarController : MonoBehaviour
 
 			if (Mathf.Abs(delta.x) > swipeThreshold && Mathf.Abs(delta.x) > Mathf.Abs(delta.y)) {
 				if (delta.x < 0f) {
-
-					MoveHorizontal(1);
+                   
+                    MoveHorizontal(1);
 				}else {
-					MoveHorizontal(-1);
+                   
+                    MoveHorizontal(-1);
 				}
 			}
 		}
@@ -121,10 +134,16 @@ public class CarController : MonoBehaviour
 		if(Vector3.Distance(transform.position, targetPosition) > 0.1f)
 		{
 			isMoving = true;
-		}
+            turnEffect.gameObject.SetActive(false);
+            turnEffect.gameObject.SetActive(true);
+            var main = ps.main;
+            main.startSpeed = -20f*direction;
+        }
 		else
 		{
 			isMoving = false;
 		}
+
+
 	}
 }
