@@ -5,7 +5,7 @@ public class SpawnerLoop : MonoBehaviour
     [SerializeField] private Transform[] movingBoddies;
 	[SerializeField] private float startZ = 50f;
 	[SerializeField] private float offCameraZ = 50f;
-	[SerializeField] private float segmentLength = 10f;
+	//[SerializeField] private float segmentLength = 10f;
 
 	private void Update()
 	{

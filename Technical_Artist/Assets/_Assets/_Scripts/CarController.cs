@@ -1,3 +1,4 @@
+using UnityEditor.XR;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Rendering;
@@ -11,7 +12,8 @@ public class CarController : MonoBehaviour
 	[SerializeField] private float swipeThreshold = 50f;
 
 	[SerializeField] Transform turnEffect ;
-
+	
+	
 	private bool isMoving = false;
 	private int currentStep = 0;
 	private Vector3 targetPosition;
@@ -21,6 +23,8 @@ public class CarController : MonoBehaviour
 	private bool isSwipingTouch = false;
 	private ParticleSystem ps;
 
+	private float directionR;
+	private float startDistance;
     private void Awake()
     {
         ps = turnEffect.GetComponent<ParticleSystem>();
@@ -42,13 +46,23 @@ public class CarController : MonoBehaviour
 		HandleTouchSwipe();
 		if (isMoving)
 		{
+		
+
+
 			Vector3 smoothMovePos = Vector3.Lerp(transform.position, targetPosition, Time.deltaTime * speed);
 			transform.position = smoothMovePos;
-		}
+          
+            float progress = 1f - (Mathf.Abs(targetPosition.x - transform.position.x) / startDistance);
+            float angle = 10f * Mathf.Sin(Mathf.PI * progress) * directionR;
+            transform.rotation = Quaternion.Euler(0, angle, 0);
+
+        }
 		else
 		{
 			transform.position = new Vector3(targetPosition.x, transform.position.y, transform.position.z);
-		}
+          
+          
+        }
 	}
 
 	private void HandleMouseSwipe()
@@ -134,6 +148,8 @@ public class CarController : MonoBehaviour
 		if(Vector3.Distance(transform.position, targetPosition) > 0.1f)
 		{
 			isMoving = true;
+            directionR = (targetPosition.x - transform.position.x) / Mathf.Abs(targetPosition.x - transform.position.x);
+            startDistance = Mathf.Abs(targetPosition.x - transform.position.x);
             turnEffect.gameObject.SetActive(false);
             turnEffect.gameObject.SetActive(true);
             var main = ps.main;
