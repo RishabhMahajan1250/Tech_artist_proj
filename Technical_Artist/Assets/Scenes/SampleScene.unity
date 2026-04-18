@@ -11158,7 +11158,7 @@ ParticleSystem:
         m_RotationOrder: 4
     startColor:
       serializedVersion: 2
-      minMaxState: 2
+      minMaxState: 0
       minColor: {r: 0.754717, g: 0.754717, b: 0.754717, a: 1}
       maxColor: {r: 1, g: 1, b: 1, a: 1}
       maxGradient:
@@ -11224,8 +11224,8 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 1
-      minScalar: 0.1
+      scalar: 1.5
+      minScalar: 0.5
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -16138,6 +16138,26 @@ PrefabInstance:
     - target: {fileID: 6498085553805567678, guid: 10197d867df4fb241bd0f23c3702ad4b, type: 3}
       propertyPath: ColorModule.enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6498085553805567678, guid: 10197d867df4fb241bd0f23c3702ad4b, type: 3}
+      propertyPath: InitialModule.startSize.minScalar
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6498085553805567678, guid: 10197d867df4fb241bd0f23c3702ad4b, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6498085553805567678, guid: 10197d867df4fb241bd0f23c3702ad4b, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6498085553805567678, guid: 10197d867df4fb241bd0f23c3702ad4b, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6498085553805567678, guid: 10197d867df4fb241bd0f23c3702ad4b, type: 3}
+      propertyPath: InitialModule.startColor.minMaxState
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6498085553805567678, guid: 10197d867df4fb241bd0f23c3702ad4b, type: 3}
       propertyPath: ColorModule.gradient.maxGradient.atime1
