@@ -94,6 +94,7 @@ Material:
     - _BumpScale: 1
     - _ClearCoatMask: 0
     - _ClearCoatSmoothness: 0
+    - _Contrast: 1
     - _Cull: 2
     - _Cutoff: 0.5
     - _DetailAlbedoMapScale: 1
@@ -104,13 +105,13 @@ Material:
     - _GlossMapScale: 1
     - _Glossiness: 0.14142135
     - _GlossyReflections: 1
-    - _Max: 4.67
+    - _Max: 12.92
     - _Metallic: 0
-    - _Min_Shadow: 0.19
+    - _Min_Shadow: 2.37
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
-    - _Posterize: 5.38
+    - _Posterize: 2.9
     - _QueueControl: 0
     - _QueueOffset: 0
     - _ReceiveShadows: 1
