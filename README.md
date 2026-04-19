@@ -27,6 +27,8 @@ The visual target was a **Dashy Crashy-like** style — bright, vibrant, high-ke
 - **Lane-switch smoke burst** — stylized smoke effect triggers on each lane change
 ### ✨ VFX & Particle Systems
 - Added stylised smoke-based trail effects for lane switch feedback and on car exhaust
+### 🎥 Camera
+- A simple camera that follows the car with slight dampening to give a fun arcade feel was added
 ---
  
 ## ⚙️ Optimization Decisions
