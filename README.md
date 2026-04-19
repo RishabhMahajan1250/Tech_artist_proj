@@ -61,5 +61,5 @@ The visual target was a **Dashy Crashy-like** style — bright, vibrant, high-ke
 ## 🎬 Demo Video
  
 > See attached/linked gameplay video showcasing lighting, colors, VFX, and overall game feel.
-> [Link Text]([https://www.example.com](https://drive.google.com/file/d/1urR-LazFNtxybO8bRT6pVSEe-57wv0NZ/view?usp=sharing) "GamePlay Vid")
+> [Link Text](https://www.example.com](https://drive.google.com/file/d/1urR-LazFNtxybO8bRT6pVSEe-57wv0NZ/view?usp=sharing)
  
