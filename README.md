@@ -16,18 +16,17 @@ The visual target was a **Dashy Crashy-like** style — bright, vibrant, high-ke
  
 ### 🌆 Environment & Scene
 - Stylized environment with background props
+- Stylised skybox with modular properties, animated clouds, and Sun  
 - Environment prop textures combined into a **texture atlas**
 ### 💡 Lighting
 - **Local Adaptive Probe Volume (APV)** used for GI coverage
 ### 🚗 Car Enhancements
-- Stylized car material with strong contrast
+- Stylized car material(Toon Shader) with strong contrast
 - Slight tilt on lane switch with smooth transition
-- **Stylized smoke trail** continuously emitted while the car moves
+- **Stylized smoke trail** emitted from car exhaust
 - **Lane-switch smoke burst** — stylized smoke effect triggers on each lane change
 ### ✨ VFX & Particle Systems
-- All particle systems tuned with appropriate emission limits, lifetime, and duration to avoid overdraw
-- Proper **Stop Action** set on the lane-switch smoke trail effect for clean cleanup
-- Shaders used: **URP Lit, URP Unlit, custom Toon Unlit (Shader Graph), URP Unlit Particle**
+- Added stylised smoke-based trail effects for lane switch feedback and on car exhaust
 ---
  
 ## ⚙️ Optimization Decisions
@@ -41,7 +40,7 @@ The visual target was a **Dashy Crashy-like** style — bright, vibrant, high-ke
 | **Shader Selection** | URP Lit, URP Unlit, custom Toon Unlit, URP Unlit Particle | All URP/mobile-friendly; no unnecessary lighting overhead |
 | **Local Adaptive Probe Volume** | Used local APV for GI | Accurate indirect lighting at low runtime cost |
 | **Particle Overdraw Control** | Capped emission rate, lifetime, duration on all particle systems | Transparent overdraw is a primary mobile GPU bottleneck |
-| **Stop Action on Smoke Trail** | Proper Stop Action configured on lane-switch effect | Ensures clean destruction, prevents lingering overdraw |
+| **Stop Action on Smoke Trail** | Proper Stop Action configured on lane-switch effect | Disable effects when not in use, prevents lingering overdraw |
  
 **Target achieved: Stable 60 FPS on low-end/mobile devices.**
  
@@ -50,10 +49,11 @@ The visual target was a **Dashy Crashy-like** style — bright, vibrant, high-ke
 ## 🛠️ Assets & Tools Used
  
 - **Unity URP** (Universal Render Pipeline)
-- **Shader Graph** — custom Toon Unlit shader
+- **Shader Graph** — custom Toon Unlit shader, skybox
 - **Unity Particle System** — motion trail and lane-switch smoke
 - **Post Processing (URP Volume)**
 - **Adaptive Probe Volumes (APV)**
+- **Photoshop** — smoke and environment asset textures 
 ---
  
 ## 🎬 Demo Video
