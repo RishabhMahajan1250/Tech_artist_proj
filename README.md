@@ -15,10 +15,11 @@ The visual target was a **Dashy Crashy-like** style — bright, vibrant, high-ke
 ## ✅ What Was Done
  
 ### 🌆 Environment & Scene
-- Stylized environment with background props ( Desert themed - Pyramids , cactus )
+- Stylized environment with background props ( Desert themed - Pyramids, cactus, road(Custom Toon shader))
 - Stylised skybox with modular properties, animated clouds, and Sun  
 ### 💡 Lighting
 - **Local Adaptive Probe Volume (APV)** used for GI coverage
+- Added bloom and color correction effects in post-processing to pop the scene further
 ### 🚗 Car Enhancements
 - Stylized car material(Toon Shader) with strong contrast
 - Slight tilt on lane switch with smooth transition
