@@ -41,9 +41,10 @@ Material:
     - _Cloud_Speed: 0.01
     - _QueueControl: 0
     - _QueueOffset: 0
+    - _XRMotionVectorsPass: 1
     m_Colors:
     - White: {r: 1, g: 1, b: 1, a: 1}
-    - _Cloud_Color: {r: 1, g: 0.69220895, b: 0.4198113, a: 0}
+    - _Cloud_Color: {r: 0.764151, g: 0.6710676, b: 0.58753115, a: 0}
     - _Sky_Color_1: {r: 1, g: 0.54425263, b: 0, a: 1}
     - _Sky_Color_2: {r: 1, g: 0.78397983, b: 0, a: 0}
     - _Sun_Position: {r: 0.5, g: -0.02, b: 0, a: 0}
