@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 1037
   m_ShowMode: 4
-  m_Title: Inspector
+  m_Title: Simulator
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -119,7 +119,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 112}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 15116
+  controlID: 4279
   draggingID: 0
 --- !u!114 &6
 MonoBehaviour:
@@ -145,7 +145,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 112}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
-  controlID: 15117
+  controlID: 4280
   draggingID: 0
 --- !u!114 &7
 MonoBehaviour:
@@ -172,7 +172,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 56}
   m_MaxSize: {x: 24288, y: 8096}
   vertical: 0
-  controlID: 15118
+  controlID: 4281
   draggingID: 0
 --- !u!114 &8
 MonoBehaviour:
@@ -217,7 +217,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 331
     y: 0
-    width: 583
+    width: 634
     height: 685
   m_MinSize: {x: 202, y: 226}
   m_MaxSize: {x: 4002, y: 4026}
@@ -227,7 +227,7 @@ MonoBehaviour:
   - {fileID: 17}
   - {fileID: 18}
   m_Selected: 0
-  m_LastSelected: 1
+  m_LastSelected: 2
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -243,9 +243,9 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 914
+    x: 965
     y: 0
-    width: 434
+    width: 383
     height: 685
   m_MinSize: {x: 202, y: 226}
   m_MaxSize: {x: 4002, y: 4026}
@@ -610,9 +610,9 @@ MonoBehaviour:
     m_TextWithWhitespace: "Simulator\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 914
+    x: 965
     y: 79
-    width: 432
+    width: 381
     height: 659
   m_SerializedDataModeController:
     m_DataMode: 0
@@ -635,7 +635,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 1}
-  m_TargetSize: {x: 1440, y: 2960}
+  m_TargetSize: {x: 1080, y: 1920}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -656,11 +656,11 @@ MonoBehaviour:
     - '{"m_SerializationStates":{"thermalFoldout":false,"performanceFoldout":false,"developerFoldout":false,"indexerFoldout":false,"scalersFoldout":false,"deviceSettingsFoldout":false}}'
     - '{}'
     - '{}'
-    scale: 19
+    scale: 26
     fitToScreenEnabled: 1
     rotationDegree: 0
     highlightSafeAreaEnabled: 0
-    friendlyName: Samsung Galaxy S8
+    friendlyName: Xiaomi Mi 5
     screenIndex: 0
     networkReachability: 1
     systemLanguage: 10
@@ -706,14 +706,12 @@ MonoBehaviour:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs:
-      - m_Data: 47502
+      - m_Data: -3598
       m_LastClickedID:
-        m_Data: 47502
+        m_Data: -3598
       m_ExpandedIDs:
-      - m_Data: -1562
-      - m_Data: -1438
+      - m_Data: -3614
       - m_Data: -1300
-      - m_Data: 47580
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -762,7 +760,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 331
     y: 79
-    width: 581
+    width: 632
     height: 659
   m_SerializedDataModeController:
     m_DataMode: 0
@@ -1432,9 +1430,9 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: -30.480576, y: -4.515081, z: 45.147484}
+    m_Target: {x: 516.7343, y: 1457.2001, z: 699.75226}
     speed: 2
-    m_Value: {x: -30.480576, y: -4.515081, z: 45.147484}
+    m_Value: {x: 516.7343, y: 1457.2001, z: 699.75226}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1480,13 +1478,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.097860076, y: 0.25441137, z: -0.02589008, w: -0.961808}
+    m_Target: {x: -0.005398206, y: -0.005408298, z: 0.000024626313, w: -0.99999434}
     speed: 2
-    m_Value: {x: -0.097860076, y: 0.25441137, z: -0.02589008, w: -0.96180797}
+    m_Value: {x: -0.005398206, y: -0.005408298, z: 0.000024626313, w: -0.99999434}
   m_Size:
-    m_Target: 50.52777
+    m_Target: 1208.839
     speed: 2
-    m_Value: 50.52777
+    m_Value: 1208.839
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -4866,7 +4864,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Settings
+    - Assets/_Assets/_Scripts
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -4876,24 +4874,24 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Settings
+  - Assets/_Assets/_Scripts
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\FunProjects\Tech_artist_proj\Technical_Artist
   m_LockTracker:
     m_IsLocked: 0
   m_LastLocalAssetsSearchArea: 1
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 150}
+    scrollPos: {x: 0, y: 127}
     m_SelectedIDs:
-    - m_Data: 48352
+    - m_Data: 48292
     m_LastClickedID:
-      m_Data: 48352
+      m_Data: 48292
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 47894
-    - m_Data: 47896
-    - m_Data: 47898
-    - m_Data: 47900
+    - m_Data: 47934
+    - m_Data: 47936
+    - m_Data: 47938
+    - m_Data: 47940
     - m_Data: 1000000000
     - m_Data: 2147483647
     m_RenameOverlay:
@@ -4928,10 +4926,10 @@ MonoBehaviour:
       m_Data: 0
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 47894
-    - m_Data: 47896
-    - m_Data: 47898
-    - m_Data: 47900
+    - m_Data: 47934
+    - m_Data: 47936
+    - m_Data: 47938
+    - m_Data: 47940
     - m_Data: 1000000000
     - m_Data: 2147483647
     m_RenameOverlay:
@@ -4961,8 +4959,8 @@ MonoBehaviour:
       m_ResourceFile: 
   m_ListAreaState:
     m_SelectedInstanceIDs:
-    - m_Data: 47502
-    m_LastClickedInstanceID: 47502
+    - m_Data: -3598
+    m_LastClickedInstanceID: -3598
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: []
     m_RenameOverlay:
