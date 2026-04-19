@@ -6526,6 +6526,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6176632375632820776, guid: ccd756b98a6bb394595732e176609785, type: 3}
+      propertyPath: ColorModule.enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6176632375632820776, guid: ccd756b98a6bb394595732e176609785, type: 3}
       propertyPath: InitialModule.startColor.maxColor.b
       value: 0.5801887
       objectReference: {fileID: 0}
@@ -6869,7 +6873,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6498085553805567678, guid: 10197d867df4fb241bd0f23c3702ad4b, type: 3}
       propertyPath: ColorModule.enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6498085553805567678, guid: 10197d867df4fb241bd0f23c3702ad4b, type: 3}
       propertyPath: InitialModule.startSize.minScalar
