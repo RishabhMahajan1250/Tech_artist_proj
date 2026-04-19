@@ -29,7 +29,7 @@ Material:
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
+  m_CustomRenderQueue: 1952
   stringTagMap: {}
   disabledShaderPasses:
   - MOTIONVECTORS
@@ -125,7 +125,7 @@ Material:
     - _Parallax: 0.005
     - _Posterize: 19.53
     - _QueueControl: 0
-    - _QueueOffset: 0
+    - _QueueOffset: -48
     - _ReceiveShadows: 1
     - _Shadow_Extent: 0.05
     - _Shadow_contrast: 17.4
