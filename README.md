@@ -15,9 +15,8 @@ The visual target was a **Dashy Crashy-like** style — bright, vibrant, high-ke
 ## ✅ What Was Done
  
 ### 🌆 Environment & Scene
-- Stylized environment with background props
+- Stylized environment with background props ( Desert themed - Pyramids , cactus )
 - Stylised skybox with modular properties, animated clouds, and Sun  
-- Environment prop textures combined into a **texture atlas**
 ### 💡 Lighting
 - **Local Adaptive Probe Volume (APV)** used for GI coverage
 ### 🚗 Car Enhancements
